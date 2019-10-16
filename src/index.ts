@@ -1,10 +1,10 @@
 import './styles.css';
-import { multiply } from "./math";
+import { multiply } from './math';
 
-const num1 = document.getElementById("number1") as HTMLInputElement;
-const num2 = document.getElementById("number2") as HTMLInputElement;
-const multiplyButton = document.getElementById("multiply") as HTMLInputElement;
-const answer = document.getElementById("answer") as HTMLInputElement;
+const num1 = document.getElementById('number1') as HTMLInputElement;
+const num2 = document.getElementById('number2') as HTMLInputElement;
+const multiplyButton = document.getElementById('multiply') as HTMLInputElement;
+const answer = document.getElementById('answer') as HTMLInputElement;
 
 
 multiplyButton.addEventListener('click', () => {
@@ -14,6 +14,6 @@ multiplyButton.addEventListener('click', () => {
     const ans = multiply(n1, n2);
 
     answer.innerText = ans.toString();
-})
+});
 
 
