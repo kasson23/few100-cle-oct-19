@@ -4,15 +4,15 @@ describe('Variables in TypeScript', () => {
         x = 'dog';
         x = 3.14;
 
-        x = function (a, b) {
-            return a + b;
-        };
+        // x = function (a, b) {
+        //     return a + b;
+        // };
 
     });
 
     it('implicit typing', () => {
-        let x = 'dog';
-        x = 3.14;
+        const x = 'dog';
+        // letx = 3.14;
     });
 
     it('has union types', () => {
@@ -84,7 +84,7 @@ It was a dark and stormy night.
             things[1] = 'bread';
             things[300] = things;
 
-            expect(things[300][1]).toBe('bread');
+            // expect(things[300][1]).toBe('bread');
 
             const numbers = [1, 2, 3, 4];
             const friends: string[] = [];
